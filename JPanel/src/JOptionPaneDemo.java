@@ -15,33 +15,40 @@ public class JOptionPaneDemo extends JFrame
 		name = JOptionPane.showInputDialog("What is your name?");  
 		JOptionPane.showMessageDialog(frame, "Hi, " + name);
 		
-		Object[] options = {"Druid", "Ranger", "Monk"};
-		className = JOptionPane.showOptionDialog(frame, "What class would you like to be?",
-				"Your Vocation",
+		Object[] options = {"Addition", "Subtraction", "Multiplication", "Division"};
+		className = JOptionPane.showOptionDialog(frame, "Which operation would you like me to use?",
+				"Your Operation",
 				JOptionPane.YES_NO_CANCEL_OPTION,
 				JOptionPane.QUESTION_MESSAGE,
-				null, options, options[2]);
+				null, options, options[0]);
 		 
 		
 		switch(className)
 			{
 			case 0:
 				{
-				JOptionPane.showMessageDialog(frame, "Ah, a nature lover...God's first Bible...");
+				JOptionPane.showMessageDialog(frame, "Back to basics");
+				JOptionPane.showMessageDialog(frame,"What is the first number that you would like to add?");
+				
 				break;
 				}
 			case 1:
 				{
-				JOptionPane.showMessageDialog(frame, "Ah, another Aragorn wannabe, eh?");
+				JOptionPane.showMessageDialog(frame, "Obvious option");
 				break;
 				}
 			case 2:
 				{
-				JOptionPane.showMessageDialog(frame, "If I had to do it all over again... Trappist monk...");
+				JOptionPane.showMessageDialog(frame, "Solid decision");
 				break;
 				}
+			case 3:
+				{
+				JOptionPane.showMessageDialog(frame, "Good choice!");
+				break;		
+				}
 			}
-		final String[] genre = { "Dungeon", "Wilderness", "Sci-Fi", "Random" };
+		final String[] operation = { "Addition", "Subtraction", "Multiplication", "Division" };
 
 			{
 			final JFrame frame = new JFrame();
@@ -50,9 +57,9 @@ public class JOptionPaneDemo extends JFrame
 		            "Adventure Genre",
 		            JOptionPane.QUESTION_MESSAGE, 
 		            null, 
-		            genre, 
-		            genre[0]);
-		    JOptionPane.showMessageDialog(frame, "Oh dear, you have no idea what you've just done...");
+		            operation, 
+		            operation[0]);
+		    JOptionPane.showMessageDialog(frame, "Math is everywhere!");
 
 
 		      }
