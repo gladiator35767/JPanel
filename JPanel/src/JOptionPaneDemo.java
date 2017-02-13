@@ -29,6 +29,7 @@ public class JOptionPaneDemo extends JFrame
 				{
 				JOptionPane.showMessageDialog(frame, "Nothing better than a bit of lively action");
 				
+
 				switch(className)
 				{
 					case 0:
