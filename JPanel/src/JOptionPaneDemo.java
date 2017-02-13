@@ -42,6 +42,7 @@ public class JOptionPaneDemo extends JFrame
 										null, options, options[0]);
 								
 							}
+				}
 				break;
 				}
 			case 1:
