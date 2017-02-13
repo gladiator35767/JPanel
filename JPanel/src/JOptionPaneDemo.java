@@ -28,7 +28,7 @@ public class JOptionPaneDemo extends JFrame
 			case 0:
 				{
 				JOptionPane.showMessageDialog(frame, "Nothing better than a bit of lively action");
-				final String[] Producer  = { "Kathleen Kennedy", "Finnur Joannsson", "Allison Sheamur"};
+				
 				switch(className)
 				{
 					case 0:
@@ -40,8 +40,32 @@ public class JOptionPaneDemo extends JFrame
 										JOptionPane.YES_NO_CANCEL_OPTION,
 										JOptionPane.QUESTION_MESSAGE,
 										null, options, options[0]);
-								
+								break;
 							}
+					case 1:
+							{
+								JOptionPane.showMessageDialog(frame, "Can't go wrong with that decision");
+								Object[] movies = {"Rogue One", "War of the Worlds", "Jurassic Park"};
+								className = JOptionPane.showOptionDialog(frame, "Which genre are you in the mood for?",
+										"Your Genre",
+										JOptionPane.YES_NO_CANCEL_OPTION,
+										JOptionPane.QUESTION_MESSAGE,
+										null, options, options[0]);
+								break;
+							}
+					case 2:
+							{
+								JOptionPane.showMessageDialog(frame, "Can't go wrong with that decision");
+								Object[] movies = {"Rogue One", "War of the Worlds", "Jurassic Park"};
+								className = JOptionPane.showOptionDialog(frame, "Which genre are you in the mood for?",
+										"Your Genre",
+										JOptionPane.YES_NO_CANCEL_OPTION,
+										JOptionPane.QUESTION_MESSAGE,
+										null, options, options[0]);
+								break;
+							}
+							
+				
 				}
 				break;
 				}
@@ -64,20 +88,20 @@ public class JOptionPaneDemo extends JFrame
 				break;		
 				}
 			}
-		final String[] operation = { "Addition", "Subtraction", "Multiplication", "Division" };
-
-			{
-			final JFrame frame = new JFrame();
-		    String favoritePizza = (String) JOptionPane.showInputDialog(frame, 
-		            "What type of adventure would you like to experience?",
-		            "Adventure Genre",
-		            JOptionPane.QUESTION_MESSAGE, 
-		            null, 
-		            operation, 
-		            operation[0]);
-		    JOptionPane.showMessageDialog(frame, "");
-
-
-		      }
+//		final String[] operation = { "Addition", "Subtraction", "Multiplication", "Division" };
+//
+//			{
+//			final JFrame frame = new JFrame();
+//		    String favoritePizza = (String) JOptionPane.showInputDialog(frame, 
+//		            "What type of adventure would you like to experience?",
+//		            "Adventure Genre",
+//		            JOptionPane.QUESTION_MESSAGE, 
+//		            null, 
+//		            operation, 
+//		            operation[0]);
+//		    JOptionPane.showMessageDialog(frame, "");
+//
+//
+//		      }
 	    }
 	}
